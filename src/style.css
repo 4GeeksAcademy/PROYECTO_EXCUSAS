@@ -1,5 +1,104 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+/* style.css
+ * Este archivo contiene los estilos para el proyecto del generador de excusas.
+ * Se han aplicado mejoras para lograr un diseño responsivo y elegante,
+ * manteniendo una apariencia sencilla pero impactante.
+ */
 
-body{
-    background: white;
-}
+/* ============================= */
+/* Estilos generales para el <body>
+/* ============================= */
+body {
+    /* Fuente moderna y legible */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Eliminamos márgenes y relleno para tener control total del layout */
+    margin: 0;
+    padding: 0;
+    
+    /* Color de fondo claro */
+    background-color: #f4f4f4;
+    
+    /* Color de texto predeterminado */
+    color: #333;
+    
+    /* Usamos Flexbox para centrar el contenido verticalmente */
+    display: flex;
+    flex-direction: column; /* Apila los elementos en columna para que el título esté arriba */
+    align-items: center;
+    justify-content: center;
+    
+    /* Altura mínima para ocupar toda la ventana */
+    min-height: 100vh;
+  }
+  
+  /* ============================= */
+  /* Contenedor principal de contenido
+  /* ============================= */
+  .container {
+    /* Ancho responsivo: 90% del ancho de la ventana, con un máximo de 600px */
+    width: 90%;
+    max-width: 600px;
+    
+    /* Relleno interno para separar el contenido de los bordes */
+    padding: 20px;
+    
+    /* Fondo blanco para destacar el contenido */
+    background-color: #fff;
+    
+    /* Borde sutil y esquinas redondeadas para un look moderno */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    
+    /* Sombra para dar profundidad */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+    /* Centrado del texto */
+    text-align: center;
+  }
+  
+  /* ============================== */
+  /* Estilos para el encabezado <h1>
+  /* ============================== */
+  h1 {
+    /* Color del título */
+    color: #444;
+    
+    /* Margen inferior para separar el título del contenido siguiente */
+    margin-bottom: 20px;
+    
+    /* Tamaño de fuente grande para resaltar el título */
+    font-size: 2em;
+  }
+  
+  /* ====================================================== */
+  /* Estilos para el párrafo que muestra la excusa (#excuse)
+  /* ====================================================== */
+  #excuse {
+    /* Tamaño de fuente para una buena legibilidad */
+    font-size: 1.5em;
+    
+    /* Negrita para dar énfasis */
+    font-weight: bold;
+    
+    /* Relleno interno para separar el contenido del borde */
+    padding: 15px;
+    
+    /* Fondo ligeramente diferenciado */
+    background-color: #fafafa;
+    
+    /* Borde sutil con un tono gris claro */
+    border: 2px solid #e0e0e0;
+    
+    /* Bordes redondeados */
+    border-radius: 5px;
+    
+    /* Transición para suavizar los cambios (incluyendo el color de texto) */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Efecto hover para darle un toque interactivo al párrafo de excusa */
+  #excuse:hover {
+    transform: scale(1.02);
+  }
+  
+  
